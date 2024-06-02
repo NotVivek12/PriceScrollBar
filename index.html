@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Price Range</title>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <h2>Price Range Selector</h2>
+      <p>Use the scroll or type.</p>
+    </div>
+    <div class="priceInput">
+      <div class="field">
+        <span>Min</span>
+        <input type="number" class="inputMin" value="2500">
+      </div>
+      <div class="separator">-</div>
+      <div class="field">
+        <span>Max</span>
+        <input type="number" class="inputMax" value="7500">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="progress"></div>
+    </div>
+    <div class="rangeInput">
+      <input type="range" class="rangeMin" min="0" max="10000" value="2500" step="100">
+      <input type="range" class="rangeMax" min="0" max="10000" value="7500" step="100">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
